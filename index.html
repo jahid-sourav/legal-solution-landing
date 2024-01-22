@@ -131,12 +131,24 @@
             .form-button{
                 @apply p-3 lg:py-4 lg:text-xl;
             }
+            .footer-text{
+                @apply text-[#CFCFCF] font-normal text-sm lg:text-base xl:text-base mt-5;
+            }
+            .footer-title{
+                @apply text-white text-2xl font-extrabold;
+            }
+            .footer-input{
+                @apply bg-white rounded-lg py-6 px-8 w-full outline-none text-[#A0A0A0] text-base font-normal;
+            }
+            .footer-button{
+                @apply text-2xl text-white rounded-lg bg-[#B68C5A] py-5 px-7 absolute top-0 right-0; 
+            }
         }
     </style>
 </head>
-<body class="px-4 lg:px-5">
+<body>
     <!-- Header Starts Here -->
-    <header class="pt-4 lg:pt-10 pb-8 lg:pb-28">
+    <header class="pt-4 lg:pt-10 pb-8 lg:pb-28 px-4 lg:px-5">
         <div class="container mx-auto">
             <!-- Navbar Starts Here -->
             <nav class="flex items-center justify-between pb-6 lg:pb-12">
@@ -301,7 +313,9 @@
         </div>
     </header>
     <!-- Header Ends Here -->
-    <main>
+
+    <!-- Main Content Starts Here -->
+    <main class="px-4 lg:px-5">
         <!-- Practice Area Starts Here -->
         <section class="section-padding">
             <div class="container mx-auto">
@@ -609,5 +623,68 @@
         </section>
         <!-- Contact Area Ends Here -->
     </main>
+    <!-- Main Content Starts Here -->
+
+    <!-- Footer Starts Here -->
+    <footer class="px-4 lg:px-5 py-4 xl:py-28 bg-[#111]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div>
+                    <a href="index.html" class="d-inline-block">
+                        <img src="assets/images/logo.png" alt="Logo" class="max-w-full h-auto">
+                    </a>
+                    <p class="footer-text font-family-poppins">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title mb-0 xl:mb-5">Usefull Link</h4>
+                    <ul>
+                        <li><a href="#" class="inline-block footer-text font-family-poppins">Home</a></li>
+                        <li><a href="#" class="inline-block footer-text font-family-poppins">About Us</a></li>
+                        <li><a href="#" class="inline-block footer-text font-family-poppins">Cases</a></li>
+                        <li><a href="#" class="inline-block footer-text font-family-poppins">Blog</a></li>
+                        <li><a href="#" class="inline-block footer-text font-family-poppins">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title mb-0 xl:mb-5">Contact Now</h4>
+                    <div class="pt-1">
+                        <p class="footer-text font-family-poppins">
+                            555 4th 5t NW, Washington <br>
+                            DC 20530, United States
+                        </p>
+                        <p class="footer-text font-family-poppins">
+                            +88 01750 000 000 <br>
+                            +88 01750 000 000
+                        </p>
+                        <p class="footer-text font-family-poppins">
+                            info@gmail.com <br>
+                            info@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title mb-0 xl:mb-5">Subscribe</h4>
+                    <div class="pt-1">
+                        <p class="footer-text font-family-poppins mb-6">
+                            Subscribe for our latest & Articles. We Won’t Give You Spam Mails
+                        </p>
+                        <form class="relative">
+                            <div>
+                                <input type="email" placeholder="Email Address" class="footer-input font-family-poppins">
+                            </div>
+                            <div>
+                                <button type="submit" class="footer-button">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Ends Here -->
 </body>
 </html>
