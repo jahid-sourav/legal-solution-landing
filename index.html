@@ -97,6 +97,12 @@
             .testimonial-content-description{
                 @apply text-[#F3F3F3] max-w-[900px] mx-auto text-sm lg:text-base font-normal;
             } 
+            .accordion-heading{
+                @apply text-[#414040] text-base sm:text-xl md:text-xl lg:text-2xl font-extrabold;
+            }
+            .accordion-description{
+                @apply text-[#707070] text-sm lg:text-base font-normal max-w-[500px];
+            }
         }
     </style>
 </head>
@@ -433,6 +439,68 @@
             </div>
         </section>
         <!-- Testimonial Area Ends Here -->
+
+        <!-- FAQ Area Starts Here -->
+        <section class="section-padding">
+            <div class="container mx-auto">
+                <h3 class="heading">Frequently Asked Any Questions</h3>
+                <p class="sub-heading font-family-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-6 items-start md:items-center lg:items-center">
+                    <div class="col-start-1 col-end-13 md:col-start-1 md:col-end-9 lg:col-start-1 lg:col-end-8">
+                        <div class="collapse collapse-plus bg-base-200 mb-6">
+                            <input type="radio" name="accordion" checked="checked"> 
+                            <div class="collapse-title accordion-heading">
+                                1. Are application fee waivers available?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="accordion-description font-family-poppins">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour. 
+                              </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200 mb-6">
+                            <input type="radio" name="accordion"> 
+                            <div class="collapse-title accordion-heading">
+                                2. Are application fee waivers available?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="accordion-description font-family-poppins">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200 mb-6">
+                            <input type="radio" name="accordion"> 
+                            <div class="collapse-title accordion-heading">
+                              3. Are application fee waivers available?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="accordion-description font-family-poppins">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="accordion"> 
+                            <div class="collapse-title accordion-heading">
+                              4. Are application fee waivers available?
+                            </div>
+                            <div class="collapse-content"> 
+                              <p class="accordion-description font-family-poppins">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-start-1 col-end-13 md:col-start-9 md:col-end-13 lg:col-start-8 lg:col-end-13">
+                        <img src="assets/images/faq/faq.png" alt="Image" class="max-w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Area Ends Here -->
     </main>
 </body>
 </html>
