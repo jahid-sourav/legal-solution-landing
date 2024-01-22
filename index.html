@@ -103,6 +103,34 @@
             .accordion-description{
                 @apply text-[#707070] text-sm lg:text-base font-normal max-w-[500px];
             }
+            .contact-card{
+                @apply p-3 lg:p-6 xl:p-14 bg-[#F3F3F3] text-center border border-[#CFCFCF] lg:border-transparent;
+            }
+            .contact-card:nth-child(3),
+            .contact-card:first-child{
+                @apply lg:border lg:border-t-transparent lg:border-b-[#CFCFCF] lg:border-e-[#CFCFCF];
+            }
+            .contact-card:nth-child(2){
+                @apply lg:border lg:border-t-transparent lg:border-b-[#CFCFCF] lg:border-x-transparent;
+            }
+            .contact-card:nth-child(3){
+                @apply lg:border-b-transparent;
+            }
+            .contact-card-heading{
+                @apply text-[#414040] font-extrabold text-lg lg:text-2xl my-2 lg:my-4;
+            }
+            .contact-card-text{
+                @apply text-[#707070] font-normal text-sm lg:text-base space-y-1;
+            }
+            .form-input{
+                @apply w-full bg-[#F3F3F3] rounded-lg border-transparent p-3 lg:p-6 lg:text-base text-[#707070] font-normal border-[#F3F3F3] outline-none;
+            }
+            .form-text-area{
+                @apply min-h-[160px] resize-none;
+            }
+            .form-button{
+                @apply p-3 lg:py-4 lg:text-xl;
+            }
         }
     </style>
 </head>
@@ -501,6 +529,85 @@
             </div>
         </section>
         <!-- FAQ Area Ends Here -->
+
+        <!-- Contact Area Starts Here -->
+        <section class="section-padding">
+            <div class="container mx-auto">
+                <h3 class="heading">Contact With Us</h3>
+                <p class="sub-heading font-family-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                    <div>
+                        <div class="grid gap-6 lg:gap-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
+                            <div class="contact-card">
+                                <img src="assets/images/contact/01.png" alt="Icon" class="mx-auto">
+                                <h5 class="contact-card-heading">Address</h5>
+                                <p class="contact-card-text font-family-poppins">
+                                    A108 Adam Street,
+                                </p>
+                                <p class="contact-card-text font-family-poppins">
+                                    New York, NY 535022
+                                </p>
+                            </div>
+                            <div class="contact-card">
+                                <img src="assets/images/contact/02.png" alt="Icon" class="mx-auto">
+                                <h5 class="contact-card-heading">Call Us</h5>
+                                <a href="tel:+8801750000000" class="contact-card-text font-family-poppins d-inline-block">
+                                    +88 01750 00 00 00
+                                </a><br>
+                                <a href="tel:+8801750000000" class="contact-card-text font-family-poppins d-inline-block">
+                                    +88 01750 00 00 00
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <img src="assets/images/contact/03.png" alt="Icon" class="mx-auto">
+                                <h5 class="contact-card-heading">Email Us</h5>
+                                <a href="mailto:info@gmail.com" class="contact-card-text font-family-poppins d-inline-block">
+                                    info@gmail.com
+                                </a>
+                                <br>
+                                <a href="mailto:info@gmail.com" class="contact-card-text font-family-poppins d-inline-block">
+                                    info@gmail.com
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <img src="assets/images/contact/04.png" alt="Icon" class="mx-auto">
+                                <h5 class="contact-card-heading">Working Hours</h5>
+                                <p class="contact-card-text font-family-poppins">
+                                    Mon-Fri: 9AM to 5PM
+                                </p>
+                                <p class="contact-card-text font-family-poppins">
+                                    Sunday: 9AM to 1 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form action="#" class="space-y-6">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="form-input font-family-poppins">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="form-input font-family-poppins">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Subject" class="form-input font-family-poppins">
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" class="form-input form-text-area font-family-poppins"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn-primary form-button w-full font-family-poppins">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Area Ends Here -->
     </main>
 </body>
 </html>
