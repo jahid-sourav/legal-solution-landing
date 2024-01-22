@@ -19,7 +19,8 @@
                         ebGaramond: ["EB Garamond", "serif"],
                     },
                     colors: {
-                        clifford: '#da373d',
+                        darkThree: '#707070',
+                        tertiaryColor: '#B68C5A',
                     }
                 }
             }
@@ -31,6 +32,14 @@
                 font-family: 'EB Garamond', serif;
             }
         }
+        @layer components {
+            .nav-link{
+                @apply lg:text-lg font-normal text-darkThree duration-500 ease-in-out hover:text-tertiaryColor outline-none;
+            }
+            .btn-primary {
+                @apply bg-tertiaryColor text-white font-semibold border border-tertiaryColor rounded-lg duration-500 ease-in-out hover:bg-transparent hover:text-tertiaryColor;
+            }
+        }
     </style>
 </head>
 <body class="lg:px-5">
@@ -40,16 +49,71 @@
             <!-- Navbar Starts Here -->
             <nav class="lg:flex lg:items-center lg:justify-between">
                 <div>
-                    <img src="assets/images/main-logo.png" alt="Logo" class="lg:max-w-full lg:h-auto">
+                    <a href="index.html" class="inline-block">
+                        <img src="assets/images/main-logo.png" alt="Logo" class="lg:max-w-full lg:h-auto">
+                    </a>
                 </div>
                 <div>
-                    <ul class="lg:flex lg:items-center">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Cases</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                    <ul class="lg:flex lg:items-center lg:space-x-7">
+                        <li>
+                            <a href="index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="dropdown dropdown-hover">
+                            <a href="#" class="nav-link" tabindex="0" role="button">
+                                Services 
+                                <span class="ms-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-hover">
+                            <a href="#" class="nav-link" tabindex="0" role="button">
+                                Cases
+                                <span class="ms-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-hover">
+                            <a href="#" class="nav-link" tabindex="0" role="button">
+                                Blog
+                                <span class="ms-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown dropdown-hover">
+                            <a href="#" class="nav-link" tabindex="0" role="button">
+                                Contact Us
+                                <span class="ms-1">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Item 1</a></li>
+                                <li><a>Item 2</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                </div>
+                <div>
+                    <a href="#" class="btn-primary inline-block lg:text-lg lg:py-4 lg:px-7">
+                        Free Consultation
+                    </a>
                 </div>
             </nav>
             <!-- Navbar Ends Here -->
